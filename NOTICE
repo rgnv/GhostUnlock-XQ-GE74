@@ -1,0 +1,34 @@
+GhostUnlock-XQ-GE74
+Copyright 2026 rgnv
+
+This repository contains a port of GhostLock (CVE-2026-43499) for the
+Sony Xperia 1 VIII (XQ-GE74).
+
+This product includes software developed as part of the following projects,
+licensed under the Apache License, Version 2.0:
+
+- GhostLock / ghostlock-app — https://github.com/YuKongA/ghostlock-app
+  (exploit engine, offset extractor; the prebuilt binaries in prebuilt/ are
+  compiled from that source with device offsets for the Xperia 1 VIII)
+- CyberMeowfia — https://github.com/NebuSec/CyberMeowfia
+  (upstream GhostLock research and exploit source)
+
+Kernel offsets in offsets/ were derived from an independently obtained
+firmware image; offsets and constants are not copyrightable facts, but they
+are published here under the same Apache-2.0 terms for convenience.
+
+This repository intentionally contains no firmware, no KernelSU-licensed
+code (KernelSU is late-loaded at runtime from the user's own manager APK),
+and no device-unique data.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not
+use these files except in compliance with the License. You may obtain a copy
+of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations
+under the License.
